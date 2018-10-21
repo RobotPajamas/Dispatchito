@@ -8,6 +8,21 @@
 
 import Foundation
 
+//struct DispatchableBox {
+//
+//    let x: Any
+//    let t: Any
+//
+//    init<T: Dispatchable>(_ erasure: T) {
+//        x = erasure
+//        t = T.self
+//    }
+//
+//    func unbox<T: Dispatchable>() -> T {
+//        return x as Dispatchable
+//    }
+//}
+
 public class SerialDispatcher : Dispatcher {
     
     private var active: Dispatchable? = nil
@@ -20,6 +35,12 @@ public class SerialDispatcher : Dispatcher {
         self.dispatchHandler = dispatchOn
     }
     
+    private func execute(_ item: Dispatchable) {
+        executionHandler.async {
+            item.run()
+        }
+    }
+    
     func clear() {
         active = nil
         queue.removeAll()
@@ -30,19 +51,26 @@ public class SerialDispatcher : Dispatcher {
     }
     
     func enqueue(item: Dispatchable) {
-        var i = item
-        i.completions.append { _ in
+//        var i = item
+        item.addCompletion({
             self.dispatchNext()
-        }
-        queue.append(i)
+        })
+//        i.completions.append { _ in
+//            self.dispatchNext()
+//        }
+        queue.append(item)
         if active == nil {
             dispatchNext()
         }
     }
     
     private func dispatchNext() {
-        active = queue.first
-        if let a = active {
+        guard !queue.isEmpty else {
+            active = nil
+            return
+        }
+        active = queue.removeFirst()
+        if var a = active {
             let cancel = {
                 // TODO: Check if this is doing what I think it is
                 // Capture this current queueItem, and compare it against the active item in X seconds
@@ -52,10 +80,26 @@ public class SerialDispatcher : Dispatcher {
                 self.active?.timedOut()
             }
             
-            dispatchHandler.asyncAfter(deadline: .now() + Double(a.timeout), execute: cancel)
-            executionHandler.async {
-                a.run()
+            // Set retry action as per item's retry policy
+            if (a.retryPolicy == .reschedule) {
+                a.retryBlock = {
+                    self.active = nil
+                    // TODO: Is this enqueue adding more and more "dispatchNext" calls?
+                    self.enqueue(item: a)
+                }
+            } else if (a.retryPolicy == .retry) {
+                a.retryBlock = {
+                    //                    it.execute()
+                    self.execute(a)
+                    // TODO: How to retry within the same context as the rest of the app?
+                    // TODO: e.g. enqueue, but at the front of the queue - so the handlers all run?
+                    self.dispatchHandler.asyncAfter(deadline: .now() + Double(a.timeout), execute: cancel)
+//                    dispatchHandler.postDelayed(cancel, it.timeout * 1000L)
+                }
             }
+            
+            dispatchHandler.asyncAfter(deadline: .now() + Double(a.timeout), execute: cancel)
+            execute(a) // TODO: Put timeout in here?
         }
     }
     

@@ -1,20 +1,21 @@
+////
+////  Completable.swift
+////  Dispatchito
+////
+////  Created by Suresh Joshi on 2018-10-20.
+////  Copyright © 2018 Robot Pajamas. All rights reserved.
+////
 //
-//  Completable.swift
-//  Dispatchito
+//public typealias CompletionBlock<T> = (Result<T>) -> Void
 //
-//  Created by Suresh Joshi on 2018-10-20.
-//  Copyright © 2018 Robot Pajamas. All rights reserved.
+//protocol Completable {
+//    associatedtype CompletableType
+//    var completions: [CompletionBlock<CompletableType>] { get set }
+//    func complete(result: Result<CompletableType>)
+//}
 //
-
-public typealias CompletionBlock<T> = (Result<T>) -> Void
-
-protocol Completable {
-    var completions: [CompletionBlock<Any>] { get set }
-    func complete(result: Result<Any>)
-}
-
-extension Completable {
-    func complete(result: Result<Any>)  {
-        completions.forEach { $0(result) }
-    }
-}
+//extension Completable {
+//    func complete(result: Result<CompletableType>)  {
+//        completions.forEach { $0(result) }
+//    }
+//}
