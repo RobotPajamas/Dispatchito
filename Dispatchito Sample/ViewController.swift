@@ -30,6 +30,10 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         passAll()
         failAll()
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            self.dispatcher.start()
+        }
     }
     
     private func passAll() {

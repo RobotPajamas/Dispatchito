@@ -3,7 +3,7 @@ import Foundation
 
 /// A thread-safe array.
 internal class SynchronizedArray<Element> {
-    fileprivate let queue = DispatchQueue(label: "com.robotpajamas.Dispatchito.SynchronizedArray \(Element.Self)", attributes: .concurrent)
+    fileprivate let queue = DispatchQueue(label: "com.robotpajamas.Dispatchito.SynchronizedArray", attributes: .concurrent)
     fileprivate var array = [Element]()
 }
 

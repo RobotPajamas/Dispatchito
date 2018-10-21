@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1967D5C9217D0C930099903A /* Dispatchito.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19B6EBC3217D06BF00C400C7 /* Dispatchito.framework */; };
 		1967D5CC217D11900099903A /* SynchronizedArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1967D5CB217D11900099903A /* SynchronizedArray.swift */; };
+		1967D5CF217D37C50099903A /* MockDispatchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1967D5CE217D37C50099903A /* MockDispatchable.swift */; };
 		19B6EB79217C153200C400C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B6EB78217C153200C400C7 /* AppDelegate.swift */; };
 		19B6EB7B217C153200C400C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B6EB7A217C153200C400C7 /* ViewController.swift */; };
 		19B6EB7E217C153200C400C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19B6EB7C217C153200C400C7 /* Main.storyboard */; };
@@ -39,6 +40,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 19B6EBC2217D06BF00C400C7;
 			remoteInfo = "Dispatchito iOS";
+		};
+		1967D5D0217D38AA0099903A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19B6EB6D217C153100C400C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19B6EB74217C153200C400C7;
+			remoteInfo = "Dispatchito Sample";
 		};
 		19B6EB95217C153400C400C7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -72,6 +80,7 @@
 
 /* Begin PBXFileReference section */
 		1967D5CB217D11900099903A /* SynchronizedArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SynchronizedArray.swift; sourceTree = "<group>"; };
+		1967D5CE217D37C50099903A /* MockDispatchable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDispatchable.swift; sourceTree = "<group>"; };
 		19B6EB75217C153200C400C7 /* Dispatchito Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dispatchito Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		19B6EB78217C153200C400C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "../Dispatchito Sample/AppDelegate.swift"; sourceTree = "<group>"; };
 		19B6EB7A217C153200C400C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "../Dispatchito Sample/ViewController.swift"; sourceTree = "<group>"; };
@@ -158,9 +167,9 @@
 				19B6EB77217C153200C400C7 /* Dispatchito Sample */,
 				19B6EB8C217C153400C400C7 /* DispatchitoTests */,
 				19B6EB97217C153400C400C7 /* DispatchitoUITests */,
-				19B6EBC4217D06BF00C400C7 /* Sources */,
-				19B6EB76217C153200C400C7 /* Products */,
 				1967D5C8217D0C930099903A /* Frameworks */,
+				19B6EB76217C153200C400C7 /* Products */,
+				19B6EBC4217D06BF00C400C7 /* Sources */,
 			);
 			sourceTree = "<group>";
 		};
@@ -194,6 +203,7 @@
 			children = (
 				19B6EB8D217C153400C400C7 /* DispatchitoTests.swift */,
 				19B6EB8F217C153400C400C7 /* Info.plist */,
+				1967D5CE217D37C50099903A /* MockDispatchable.swift */,
 			);
 			path = DispatchitoTests;
 			sourceTree = "<group>";
@@ -271,6 +281,7 @@
 			);
 			dependencies = (
 				1967D5C7217D0C8A0099903A /* PBXTargetDependency */,
+				1967D5D1217D38AA0099903A /* PBXTargetDependency */,
 			);
 			name = DispatchitoTests;
 			productName = DispatchitoTests;
@@ -328,7 +339,6 @@
 					};
 					19B6EB88217C153400C400C7 = {
 						CreatedOnToolsVersion = 10.0;
-						TestTargetID = 19B6EB74217C153200C400C7;
 					};
 					19B6EB93217C153400C400C7 = {
 						CreatedOnToolsVersion = 10.0;
@@ -410,6 +420,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				19B6EB8E217C153400C400C7 /* DispatchitoTests.swift in Sources */,
+				1967D5CF217D37C50099903A /* MockDispatchable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,6 +458,11 @@
 			isa = PBXTargetDependency;
 			target = 19B6EBC2217D06BF00C400C7 /* Dispatchito iOS */;
 			targetProxy = 1967D5C6217D0C8A0099903A /* PBXContainerItemProxy */;
+		};
+		1967D5D1217D38AA0099903A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 19B6EB74217C153200C400C7 /* Dispatchito Sample */;
+			targetProxy = 1967D5D0217D38AA0099903A /* PBXContainerItemProxy */;
 		};
 		19B6EB96217C153400C400C7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -604,7 +620,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VM48BXJYVB;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -623,7 +639,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VM48BXJYVB;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -640,7 +656,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = DispatchitoTests/Info.plist;
@@ -653,7 +668,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dispatchito.app/Dispatchito";
 			};
 			name = Debug;
 		};
@@ -661,7 +675,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = DispatchitoTests/Info.plist;
@@ -674,7 +687,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dispatchito.app/Dispatchito";
 			};
 			name = Release;
 		};

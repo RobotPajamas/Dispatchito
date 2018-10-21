@@ -8,33 +8,23 @@
 
 import Foundation
 
-//struct DispatchableBox {
-//
-//    let x: Any
-//    let t: Any
-//
-//    init<T: Dispatchable>(_ erasure: T) {
-//        x = erasure
-//        t = T.self
-//    }
-//
-//    func unbox<T: Dispatchable>() -> T {
-//        return x as Dispatchable
-//    }
-//}
-
 public class SerialDispatcher : Dispatcher {
     
     private var active: Dispatchable? = nil
     private var queue = SynchronizedArray<Dispatchable>()
     private let executionHandler: DispatchQueue
     private let dispatchHandler: DispatchQueue
+    private let concurrencyQueue = DispatchQueue(label: "com.robotpajamas.Dispatchito.SerialDispatcher")
     
-    public init(executeOn: DispatchQueue, dispatchOn: DispatchQueue) {
-        self.executionHandler = executeOn
-        self.dispatchHandler = dispatchOn
+    private var isStarted: Bool = false
+    
+    public init(executeOn executeQueue: DispatchQueue = DispatchQueue.main,
+                dispatchOn dispatchQueue: DispatchQueue = DispatchQueue.main) {
+        self.executionHandler = executeQueue
+        self.dispatchHandler = dispatchQueue
     }
     
+    // TODO: Put timeout in here?
     private func execute(_ item: Dispatchable) {
         executionHandler.async {
             item.run()
@@ -42,11 +32,12 @@ public class SerialDispatcher : Dispatcher {
     }
     
     public func start() {
-        
+        concurrencyQueue.sync { isStarted = true }
+        dispatchNext()
     }
     
     public func stop() {
-        
+        concurrencyQueue.sync { isStarted = false }
     }
     
     public func clear() {
@@ -59,20 +50,26 @@ public class SerialDispatcher : Dispatcher {
     }
     
     public func enqueue(item: Dispatchable) {
-//        var i = item
         item.addCompletion({
             self.dispatchNext()
         })
-//        i.completions.append { _ in
-//            self.dispatchNext()
-//        }
         queue.append(item)
-        if active == nil {
-            dispatchNext()
-        }
+        
+//        concurrencyQueue.sync {
+            if active == nil {
+                dispatchNext()
+            }
+//        }
     }
     
     private func dispatchNext() {
+        var result = false
+        concurrencyQueue.sync { result = isStarted }
+        guard result == true else {
+            print ("Not started")
+            return
+        }
+        
         active = queue.removeFirst()
         if var a = active {
             let cancel = {
@@ -98,12 +95,11 @@ public class SerialDispatcher : Dispatcher {
                     // TODO: How to retry within the same context as the rest of the app?
                     // TODO: e.g. enqueue, but at the front of the queue - so the handlers all run?
                     self.dispatchHandler.asyncAfter(deadline: .now() + Double(a.timeout), execute: cancel)
-//                    dispatchHandler.postDelayed(cancel, it.timeout * 1000L)
                 }
             }
             
             dispatchHandler.asyncAfter(deadline: .now() + Double(a.timeout), execute: cancel)
-            execute(a) // TODO: Put timeout in here?
+            execute(a)
         }
     }
     

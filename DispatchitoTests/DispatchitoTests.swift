@@ -19,16 +19,34 @@ class DispatchitoTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() {
+    func testDispatcherEnqueue() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let dispatcher = SerialDispatcher()
+        dispatcher.enqueue(item: MockDispatchable())
+        dispatcher.enqueue(item: MockDispatchable())
+        dispatcher.enqueue(item: MockDispatchable())
+        dispatcher.enqueue(item: MockDispatchable())
+        XCTAssert(dispatcher.count() == 4)
+        
+        dispatcher.clear()
+        XCTAssert(dispatcher.count() == 0)
     }
 
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func testDispatcherCount() {
+        // This is an example of a functional test case.
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let dispatcher = SerialDispatcher()
+        XCTAssert(dispatcher.count() == 0)
+        dispatcher.enqueue(item: MockDispatchable())
+        XCTAssert(dispatcher.count() == 1)
+        dispatcher.enqueue(item: MockDispatchable())
+        XCTAssert(dispatcher.count() == 2)
+        dispatcher.enqueue(item: MockDispatchable())
+        XCTAssert(dispatcher.count() == 3)
+        dispatcher.clear()
+        XCTAssert(dispatcher.count() == 0)
     }
+    
 
 }
