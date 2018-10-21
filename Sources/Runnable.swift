@@ -6,6 +6,6 @@
 //  Copyright © 2018 Robot Pajamas. All rights reserved.
 //
 
-protocol Runnable {
+public protocol Runnable {
     func run()
 }

@@ -26,7 +26,7 @@ import Foundation
 public class SerialDispatcher : Dispatcher {
     
     private var active: Dispatchable? = nil
-    private var queue: [Dispatchable] = []
+    private var queue = SynchronizedArray<Dispatchable>()
     private let executionHandler: DispatchQueue
     private let dispatchHandler: DispatchQueue
     
@@ -41,16 +41,24 @@ public class SerialDispatcher : Dispatcher {
         }
     }
     
-    func clear() {
+    public func start() {
+        
+    }
+    
+    public func stop() {
+        
+    }
+    
+    public func clear() {
         active = nil
         queue.removeAll()
     }
     
-    func count() -> Int {
+    public func count() -> Int {
         return queue.count
     }
     
-    func enqueue(item: Dispatchable) {
+    public func enqueue(item: Dispatchable) {
 //        var i = item
         item.addCompletion({
             self.dispatchNext()
@@ -65,10 +73,6 @@ public class SerialDispatcher : Dispatcher {
     }
     
     private func dispatchNext() {
-        guard !queue.isEmpty else {
-            active = nil
-            return
-        }
         active = queue.removeFirst()
         if var a = active {
             let cancel = {

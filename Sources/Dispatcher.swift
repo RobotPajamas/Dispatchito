@@ -6,8 +6,10 @@
 //  Copyright © 2018 Robot Pajamas. All rights reserved.
 //
 
-protocol Dispatcher {
+public protocol Dispatcher {
     func clear()
     func count() -> Int
     func enqueue(item: Dispatchable)
+    func start()
+    func stop()
 }

@@ -14,7 +14,7 @@ import UIKit
 public typealias CompletionBlock<T> = (Result<T>) -> Void
 public typealias ExecutionBlock<T> = ((Result<T>) -> Void) -> Void
 
-protocol Dispatchable : Runnable, Cancellable, Retriable, Timeoutable /*Completable, Executable */{
+public protocol Dispatchable : Runnable, Cancellable, Retriable, Timeoutable /*Completable, Executable */{
     var id: String { get }
 //    var completions: [Any] { get set }
     func addCompletion(_ completion: @escaping () -> Void)

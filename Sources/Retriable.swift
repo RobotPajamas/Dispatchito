@@ -14,7 +14,7 @@ public enum RetryPolicy {
     case reschedule
 }
 
-protocol Retriable {
+public protocol Retriable {
     var maxRetries: Int { get set }
     var retryPolicy: RetryPolicy { get set }
 //    var retries: Int { get set }

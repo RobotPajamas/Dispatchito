@@ -6,13 +6,13 @@
 //  Copyright © 2018 Robot Pajamas. All rights reserved.
 //
 
-protocol Cancellable {
+public protocol Cancellable {
     var isCancelled: Bool { get set }
     mutating func cancel()
 }
 
 extension Cancellable {
-    mutating func cancel() {
+    public mutating func cancel() {
         self.isCancelled = true
     }
 }

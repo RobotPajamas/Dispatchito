@@ -8,16 +8,16 @@
 
 public class Dispatch<T> : Dispatchable {
     
-    var maxRetries: Int
-    var retryPolicy: RetryPolicy
+    public var maxRetries: Int
+    public var retryPolicy: RetryPolicy
     var retries: Int = 0
-    var retryBlock: RetryBlock = {}
+    public var retryBlock: RetryBlock = {}
     
-    var id: String
-    var isCancelled: Bool = false
+    public var id: String
+    public var isCancelled: Bool = false
     var completions: [CompletionBlock<T>] = []
     var execution: ExecutionBlock<T>
-    var timeout: Int = 1
+    public var timeout: Int = 1
     
     public init(
         id: String,
@@ -38,13 +38,13 @@ public class Dispatch<T> : Dispatchable {
         }
     }
     
-    internal func addCompletion(_ completion: @escaping () -> Void) {
+    public func addCompletion(_ completion: @escaping () -> Void) {
         completions.append {_ in
             completion()
         }
     }
     
-    internal func run() {
+    public func run() {
         if isCancelled {
             complete(result: .failure(Errors.cancelled))
             return
@@ -77,12 +77,12 @@ public class Dispatch<T> : Dispatchable {
         }
     }
     
-    internal func retry() {
+    public func retry() {
         retries += 1
         retryBlock()
     }
     
-    internal func timedOut() {
+    public func timedOut() {
         complete(result: .failure(Errors.timeout))
 //        complete(Result.Failure<T>(TimeoutException("$id timed out after $timeout seconds")))
     }

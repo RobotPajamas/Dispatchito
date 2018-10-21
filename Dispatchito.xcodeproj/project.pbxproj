@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1967D5C9217D0C930099903A /* Dispatchito.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19B6EBC3217D06BF00C400C7 /* Dispatchito.framework */; };
+		1967D5CC217D11900099903A /* SynchronizedArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1967D5CB217D11900099903A /* SynchronizedArray.swift */; };
 		19B6EB79217C153200C400C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B6EB78217C153200C400C7 /* AppDelegate.swift */; };
 		19B6EB7B217C153200C400C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B6EB7A217C153200C400C7 /* ViewController.swift */; };
 		19B6EB7E217C153200C400C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19B6EB7C217C153200C400C7 /* Main.storyboard */; };
@@ -14,26 +16,29 @@
 		19B6EB83217C153400C400C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19B6EB81217C153400C400C7 /* LaunchScreen.storyboard */; };
 		19B6EB8E217C153400C400C7 /* DispatchitoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B6EB8D217C153400C400C7 /* DispatchitoTests.swift */; };
 		19B6EB99217C153400C400C7 /* DispatchitoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B6EB98217C153400C400C7 /* DispatchitoUITests.swift */; };
-		19B6EBA9217C1B2A00C400C7 /* Cancellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B6EBA8217C1B2A00C400C7 /* Cancellable.swift */; };
-		19B6EBAB217C1B3D00C400C7 /* Completable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B6EBAA217C1B3D00C400C7 /* Completable.swift */; };
-		19B6EBAD217C1B6E00C400C7 /* Dispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B6EBAC217C1B6E00C400C7 /* Dispatch.swift */; };
-		19B6EBAF217C1B7800C400C7 /* Dispatchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B6EBAE217C1B7800C400C7 /* Dispatchable.swift */; };
-		19B6EBB1217C1B8D00C400C7 /* Dispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B6EBB0217C1B8D00C400C7 /* Dispatcher.swift */; };
-		19B6EBB3217C1B9C00C400C7 /* Executable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B6EBB2217C1B9C00C400C7 /* Executable.swift */; };
-		19B6EBB5217C1BCA00C400C7 /* Retriable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B6EBB4217C1BCA00C400C7 /* Retriable.swift */; };
-		19B6EBB7217C1BDA00C400C7 /* SerialDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B6EBB6217C1BDA00C400C7 /* SerialDispatcher.swift */; };
-		19B6EBB9217C1BEB00C400C7 /* Timeoutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B6EBB8217C1BEB00C400C7 /* Timeoutable.swift */; };
-		19B6EBBB217C1EDD00C400C7 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B6EBBA217C1EDD00C400C7 /* Result.swift */; };
-		19B6EBBD217C2D5700C400C7 /* Runnable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B6EBBC217C2D5700C400C7 /* Runnable.swift */; };
+		19B6EBCA217D06C000C400C7 /* Dispatchito.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19B6EBC3217D06BF00C400C7 /* Dispatchito.framework */; };
+		19B6EBCB217D06C000C400C7 /* Dispatchito.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 19B6EBC3217D06BF00C400C7 /* Dispatchito.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		19B6EBE8217D08B300C400C7 /* SerialDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B6EBDB217D08B200C400C7 /* SerialDispatcher.swift */; };
+		19B6EBE9217D08B300C400C7 /* Cancellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B6EBDC217D08B200C400C7 /* Cancellable.swift */; };
+		19B6EBEB217D08B300C400C7 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B6EBDE217D08B200C400C7 /* Result.swift */; };
+		19B6EBEC217D08B300C400C7 /* Completable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B6EBDF217D08B200C400C7 /* Completable.swift */; };
+		19B6EBED217D08B300C400C7 /* Retriable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B6EBE0217D08B200C400C7 /* Retriable.swift */; };
+		19B6EBEE217D08B300C400C7 /* Runnable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B6EBE1217D08B200C400C7 /* Runnable.swift */; };
+		19B6EBEF217D08B300C400C7 /* Dispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B6EBE2217D08B200C400C7 /* Dispatch.swift */; };
+		19B6EBF0217D08B300C400C7 /* Dispatchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B6EBE3217D08B200C400C7 /* Dispatchable.swift */; };
+		19B6EBF1217D08B300C400C7 /* Dispatchito_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 19B6EBE4217D08B200C400C7 /* Dispatchito_iOS.h */; };
+		19B6EBF2217D08B300C400C7 /* Dispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B6EBE5217D08B300C400C7 /* Dispatcher.swift */; };
+		19B6EBF3217D08B300C400C7 /* Executable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B6EBE6217D08B300C400C7 /* Executable.swift */; };
+		19B6EBF4217D08B300C400C7 /* Timeoutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B6EBE7217D08B300C400C7 /* Timeoutable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		19B6EB8A217C153400C400C7 /* PBXContainerItemProxy */ = {
+		1967D5C6217D0C8A0099903A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 19B6EB6D217C153100C400C7 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 19B6EB74217C153200C400C7;
-			remoteInfo = Dispatchito;
+			remoteGlobalIDString = 19B6EBC2217D06BF00C400C7;
+			remoteInfo = "Dispatchito iOS";
 		};
 		19B6EB95217C153400C400C7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -42,14 +47,36 @@
 			remoteGlobalIDString = 19B6EB74217C153200C400C7;
 			remoteInfo = Dispatchito;
 		};
+		19B6EBC8217D06C000C400C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19B6EB6D217C153100C400C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19B6EBC2217D06BF00C400C7;
+			remoteInfo = "Dispatchito iOS";
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		19B6EBCF217D06C000C400C7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				19B6EBCB217D06C000C400C7 /* Dispatchito.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		19B6EB75217C153200C400C7 /* Dispatchito.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dispatchito.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		19B6EB78217C153200C400C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		19B6EB7A217C153200C400C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1967D5CB217D11900099903A /* SynchronizedArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SynchronizedArray.swift; sourceTree = "<group>"; };
+		19B6EB75217C153200C400C7 /* Dispatchito Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dispatchito Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		19B6EB78217C153200C400C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "../Dispatchito Sample/AppDelegate.swift"; sourceTree = "<group>"; };
+		19B6EB7A217C153200C400C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "../Dispatchito Sample/ViewController.swift"; sourceTree = "<group>"; };
 		19B6EB7D217C153200C400C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		19B6EB7F217C153400C400C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		19B6EB7F217C153400C400C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../Dispatchito Sample/Assets.xcassets"; sourceTree = "<group>"; };
 		19B6EB82217C153400C400C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		19B6EB84217C153400C400C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		19B6EB89217C153400C400C7 /* DispatchitoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DispatchitoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,17 +85,20 @@
 		19B6EB94217C153400C400C7 /* DispatchitoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DispatchitoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		19B6EB98217C153400C400C7 /* DispatchitoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchitoUITests.swift; sourceTree = "<group>"; };
 		19B6EB9A217C153400C400C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		19B6EBA8217C1B2A00C400C7 /* Cancellable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cancellable.swift; sourceTree = "<group>"; };
-		19B6EBAA217C1B3D00C400C7 /* Completable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Completable.swift; sourceTree = "<group>"; };
-		19B6EBAC217C1B6E00C400C7 /* Dispatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dispatch.swift; sourceTree = "<group>"; };
-		19B6EBAE217C1B7800C400C7 /* Dispatchable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dispatchable.swift; sourceTree = "<group>"; };
-		19B6EBB0217C1B8D00C400C7 /* Dispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dispatcher.swift; sourceTree = "<group>"; };
-		19B6EBB2217C1B9C00C400C7 /* Executable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Executable.swift; sourceTree = "<group>"; };
-		19B6EBB4217C1BCA00C400C7 /* Retriable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Retriable.swift; sourceTree = "<group>"; };
-		19B6EBB6217C1BDA00C400C7 /* SerialDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerialDispatcher.swift; sourceTree = "<group>"; };
-		19B6EBB8217C1BEB00C400C7 /* Timeoutable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timeoutable.swift; sourceTree = "<group>"; };
-		19B6EBBA217C1EDD00C400C7 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
-		19B6EBBC217C2D5700C400C7 /* Runnable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Runnable.swift; sourceTree = "<group>"; };
+		19B6EBC3217D06BF00C400C7 /* Dispatchito.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Dispatchito.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		19B6EBDB217D08B200C400C7 /* SerialDispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SerialDispatcher.swift; path = Sources/SerialDispatcher.swift; sourceTree = SOURCE_ROOT; };
+		19B6EBDC217D08B200C400C7 /* Cancellable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Cancellable.swift; path = Sources/Cancellable.swift; sourceTree = SOURCE_ROOT; };
+		19B6EBDD217D08B200C400C7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Sources/Info.plist; sourceTree = SOURCE_ROOT; };
+		19B6EBDE217D08B200C400C7 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Sources/Result.swift; sourceTree = SOURCE_ROOT; };
+		19B6EBDF217D08B200C400C7 /* Completable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Completable.swift; path = Sources/Internal/Completable.swift; sourceTree = SOURCE_ROOT; };
+		19B6EBE0217D08B200C400C7 /* Retriable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Retriable.swift; path = Sources/Retriable.swift; sourceTree = SOURCE_ROOT; };
+		19B6EBE1217D08B200C400C7 /* Runnable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Runnable.swift; path = Sources/Runnable.swift; sourceTree = SOURCE_ROOT; };
+		19B6EBE2217D08B200C400C7 /* Dispatch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Dispatch.swift; path = Sources/Dispatch.swift; sourceTree = SOURCE_ROOT; };
+		19B6EBE3217D08B200C400C7 /* Dispatchable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Dispatchable.swift; path = Sources/Dispatchable.swift; sourceTree = SOURCE_ROOT; };
+		19B6EBE4217D08B200C400C7 /* Dispatchito_iOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Dispatchito_iOS.h; path = Sources/Dispatchito_iOS.h; sourceTree = SOURCE_ROOT; };
+		19B6EBE5217D08B300C400C7 /* Dispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Dispatcher.swift; path = Sources/Dispatcher.swift; sourceTree = SOURCE_ROOT; };
+		19B6EBE6217D08B300C400C7 /* Executable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Executable.swift; path = Sources/Internal/Executable.swift; sourceTree = SOURCE_ROOT; };
+		19B6EBE7217D08B300C400C7 /* Timeoutable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Timeoutable.swift; path = Sources/Timeoutable.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19B6EBCA217D06C000C400C7 /* Dispatchito.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1967D5C9217D0C930099903A /* Dispatchito.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,33 +125,59 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		19B6EBC0217D06BF00C400C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1967D5C8217D0C930099903A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1967D5CD217D1A8B0099903A /* Internal */ = {
+			isa = PBXGroup;
+			children = (
+				1967D5CB217D11900099903A /* SynchronizedArray.swift */,
+				19B6EBDF217D08B200C400C7 /* Completable.swift */,
+				19B6EBE6217D08B300C400C7 /* Executable.swift */,
+			);
+			path = Internal;
+			sourceTree = "<group>";
+		};
 		19B6EB6C217C153100C400C7 = {
 			isa = PBXGroup;
 			children = (
-				19B6EB77217C153200C400C7 /* Sources */,
+				19B6EB77217C153200C400C7 /* Dispatchito Sample */,
 				19B6EB8C217C153400C400C7 /* DispatchitoTests */,
 				19B6EB97217C153400C400C7 /* DispatchitoUITests */,
+				19B6EBC4217D06BF00C400C7 /* Sources */,
 				19B6EB76217C153200C400C7 /* Products */,
+				1967D5C8217D0C930099903A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		19B6EB76217C153200C400C7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				19B6EB75217C153200C400C7 /* Dispatchito.app */,
+				19B6EB75217C153200C400C7 /* Dispatchito Sample.app */,
 				19B6EB89217C153400C400C7 /* DispatchitoTests.xctest */,
 				19B6EB94217C153400C400C7 /* DispatchitoUITests.xctest */,
+				19B6EBC3217D06BF00C400C7 /* Dispatchito.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		19B6EB77217C153200C400C7 /* Sources */ = {
+		19B6EB77217C153200C400C7 /* Dispatchito Sample */ = {
 			isa = PBXGroup;
 			children = (
-				19B6EBA7217C1AEC00C400C7 /* New Group */,
 				19B6EB78217C153200C400C7 /* AppDelegate.swift */,
 				19B6EB7A217C153200C400C7 /* ViewController.swift */,
 				19B6EB7C217C153200C400C7 /* Main.storyboard */,
@@ -127,6 +185,7 @@
 				19B6EB81217C153400C400C7 /* LaunchScreen.storyboard */,
 				19B6EB84217C153400C400C7 /* Info.plist */,
 			);
+			name = "Dispatchito Sample";
 			path = Sources;
 			sourceTree = "<group>";
 		};
@@ -148,42 +207,56 @@
 			path = DispatchitoUITests;
 			sourceTree = "<group>";
 		};
-		19B6EBA7217C1AEC00C400C7 /* New Group */ = {
+		19B6EBC4217D06BF00C400C7 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				19B6EBA8217C1B2A00C400C7 /* Cancellable.swift */,
-				19B6EBAA217C1B3D00C400C7 /* Completable.swift */,
-				19B6EBAC217C1B6E00C400C7 /* Dispatch.swift */,
-				19B6EBAE217C1B7800C400C7 /* Dispatchable.swift */,
-				19B6EBB0217C1B8D00C400C7 /* Dispatcher.swift */,
-				19B6EBB2217C1B9C00C400C7 /* Executable.swift */,
-				19B6EBB4217C1BCA00C400C7 /* Retriable.swift */,
-				19B6EBB6217C1BDA00C400C7 /* SerialDispatcher.swift */,
-				19B6EBB8217C1BEB00C400C7 /* Timeoutable.swift */,
-				19B6EBBA217C1EDD00C400C7 /* Result.swift */,
-				19B6EBBC217C2D5700C400C7 /* Runnable.swift */,
+				1967D5CD217D1A8B0099903A /* Internal */,
+				19B6EBDC217D08B200C400C7 /* Cancellable.swift */,
+				19B6EBE2217D08B200C400C7 /* Dispatch.swift */,
+				19B6EBE3217D08B200C400C7 /* Dispatchable.swift */,
+				19B6EBE5217D08B300C400C7 /* Dispatcher.swift */,
+				19B6EBE4217D08B200C400C7 /* Dispatchito_iOS.h */,
+				19B6EBDD217D08B200C400C7 /* Info.plist */,
+				19B6EBDE217D08B200C400C7 /* Result.swift */,
+				19B6EBE0217D08B200C400C7 /* Retriable.swift */,
+				19B6EBE1217D08B200C400C7 /* Runnable.swift */,
+				19B6EBDB217D08B200C400C7 /* SerialDispatcher.swift */,
+				19B6EBE7217D08B300C400C7 /* Timeoutable.swift */,
 			);
-			name = "New Group";
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		19B6EBBE217D06BF00C400C7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19B6EBF1217D08B300C400C7 /* Dispatchito_iOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		19B6EB74217C153200C400C7 /* Dispatchito */ = {
+		19B6EB74217C153200C400C7 /* Dispatchito Sample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 19B6EB9D217C153400C400C7 /* Build configuration list for PBXNativeTarget "Dispatchito" */;
+			buildConfigurationList = 19B6EB9D217C153400C400C7 /* Build configuration list for PBXNativeTarget "Dispatchito Sample" */;
 			buildPhases = (
 				19B6EB71217C153200C400C7 /* Sources */,
 				19B6EB72217C153200C400C7 /* Frameworks */,
 				19B6EB73217C153200C400C7 /* Resources */,
+				19B6EBCF217D06C000C400C7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				19B6EBC9217D06C000C400C7 /* PBXTargetDependency */,
 			);
-			name = Dispatchito;
+			name = "Dispatchito Sample";
 			productName = Dispatchito;
-			productReference = 19B6EB75217C153200C400C7 /* Dispatchito.app */;
+			productReference = 19B6EB75217C153200C400C7 /* Dispatchito Sample.app */;
 			productType = "com.apple.product-type.application";
 		};
 		19B6EB88217C153400C400C7 /* DispatchitoTests */ = {
@@ -197,7 +270,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				19B6EB8B217C153400C400C7 /* PBXTargetDependency */,
+				1967D5C7217D0C8A0099903A /* PBXTargetDependency */,
 			);
 			name = DispatchitoTests;
 			productName = DispatchitoTests;
@@ -222,6 +295,24 @@
 			productReference = 19B6EB94217C153400C400C7 /* DispatchitoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		19B6EBC2217D06BF00C400C7 /* Dispatchito iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19B6EBCC217D06C000C400C7 /* Build configuration list for PBXNativeTarget "Dispatchito iOS" */;
+			buildPhases = (
+				19B6EBBE217D06BF00C400C7 /* Headers */,
+				19B6EBBF217D06BF00C400C7 /* Sources */,
+				19B6EBC0217D06BF00C400C7 /* Frameworks */,
+				19B6EBC1217D06BF00C400C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Dispatchito iOS";
+			productName = "Dispatchito iOS";
+			productReference = 19B6EBC3217D06BF00C400C7 /* Dispatchito.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -243,6 +334,10 @@
 						CreatedOnToolsVersion = 10.0;
 						TestTargetID = 19B6EB74217C153200C400C7;
 					};
+					19B6EBC2217D06BF00C400C7 = {
+						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
+					};
 				};
 			};
 			buildConfigurationList = 19B6EB70217C153100C400C7 /* Build configuration list for PBXProject "Dispatchito" */;
@@ -258,9 +353,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				19B6EB74217C153200C400C7 /* Dispatchito */,
+				19B6EBC2217D06BF00C400C7 /* Dispatchito iOS */,
 				19B6EB88217C153400C400C7 /* DispatchitoTests */,
 				19B6EB93217C153400C400C7 /* DispatchitoUITests */,
+				19B6EB74217C153200C400C7 /* Dispatchito Sample */,
 			);
 		};
 /* End PBXProject section */
@@ -290,6 +386,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		19B6EBC1217D06BF00C400C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -297,19 +400,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19B6EBAB217C1B3D00C400C7 /* Completable.swift in Sources */,
-				19B6EBBD217C2D5700C400C7 /* Runnable.swift in Sources */,
-				19B6EBA9217C1B2A00C400C7 /* Cancellable.swift in Sources */,
-				19B6EBB7217C1BDA00C400C7 /* SerialDispatcher.swift in Sources */,
-				19B6EBB5217C1BCA00C400C7 /* Retriable.swift in Sources */,
-				19B6EBAD217C1B6E00C400C7 /* Dispatch.swift in Sources */,
-				19B6EBAF217C1B7800C400C7 /* Dispatchable.swift in Sources */,
-				19B6EBBB217C1EDD00C400C7 /* Result.swift in Sources */,
-				19B6EBB1217C1B8D00C400C7 /* Dispatcher.swift in Sources */,
-				19B6EBB3217C1B9C00C400C7 /* Executable.swift in Sources */,
 				19B6EB7B217C153200C400C7 /* ViewController.swift in Sources */,
 				19B6EB79217C153200C400C7 /* AppDelegate.swift in Sources */,
-				19B6EBB9217C1BEB00C400C7 /* Timeoutable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,18 +421,42 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		19B6EBBF217D06BF00C400C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19B6EBEC217D08B300C400C7 /* Completable.swift in Sources */,
+				19B6EBF0217D08B300C400C7 /* Dispatchable.swift in Sources */,
+				19B6EBF2217D08B300C400C7 /* Dispatcher.swift in Sources */,
+				19B6EBEB217D08B300C400C7 /* Result.swift in Sources */,
+				19B6EBED217D08B300C400C7 /* Retriable.swift in Sources */,
+				19B6EBE9217D08B300C400C7 /* Cancellable.swift in Sources */,
+				19B6EBEE217D08B300C400C7 /* Runnable.swift in Sources */,
+				19B6EBE8217D08B300C400C7 /* SerialDispatcher.swift in Sources */,
+				19B6EBEF217D08B300C400C7 /* Dispatch.swift in Sources */,
+				19B6EBF3217D08B300C400C7 /* Executable.swift in Sources */,
+				1967D5CC217D11900099903A /* SynchronizedArray.swift in Sources */,
+				19B6EBF4217D08B300C400C7 /* Timeoutable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		19B6EB8B217C153400C400C7 /* PBXTargetDependency */ = {
+		1967D5C7217D0C8A0099903A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 19B6EB74217C153200C400C7 /* Dispatchito */;
-			targetProxy = 19B6EB8A217C153400C400C7 /* PBXContainerItemProxy */;
+			target = 19B6EBC2217D06BF00C400C7 /* Dispatchito iOS */;
+			targetProxy = 1967D5C6217D0C8A0099903A /* PBXContainerItemProxy */;
 		};
 		19B6EB96217C153400C400C7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 19B6EB74217C153200C400C7 /* Dispatchito */;
+			target = 19B6EB74217C153200C400C7 /* Dispatchito Sample */;
 			targetProxy = 19B6EB95217C153400C400C7 /* PBXContainerItemProxy */;
+		};
+		19B6EBC9217D06C000C400C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 19B6EBC2217D06BF00C400C7 /* Dispatchito iOS */;
+			targetProxy = 19B6EBC8217D06C000C400C7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -351,6 +467,7 @@
 				19B6EB7D217C153200C400C7 /* Base */,
 			);
 			name = Main.storyboard;
+			path = "../Dispatchito Sample";
 			sourceTree = "<group>";
 		};
 		19B6EB81217C153400C400C7 /* LaunchScreen.storyboard */ = {
@@ -359,6 +476,7 @@
 				19B6EB82217C153400C400C7 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = "../Dispatchito Sample";
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -483,15 +601,16 @@
 		19B6EB9E217C153400C400C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = VM48BXJYVB;
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.robotpajamas.Dispatchito;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.robotpajamas.Dispatchito-Sample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -501,15 +620,16 @@
 		19B6EB9F217C153400C400C7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = VM48BXJYVB;
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.robotpajamas.Dispatchito;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.robotpajamas.Dispatchito-Sample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -598,6 +718,69 @@
 			};
 			name = Release;
 		};
+		19B6EBCD217D06C000C400C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.robotpajamas.Dispatchito-iOS";
+				PRODUCT_NAME = Dispatchito;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		19B6EBCE217D06C000C400C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.robotpajamas.Dispatchito-iOS";
+				PRODUCT_NAME = Dispatchito;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -610,7 +793,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		19B6EB9D217C153400C400C7 /* Build configuration list for PBXNativeTarget "Dispatchito" */ = {
+		19B6EB9D217C153400C400C7 /* Build configuration list for PBXNativeTarget "Dispatchito Sample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				19B6EB9E217C153400C400C7 /* Debug */,
@@ -633,6 +816,15 @@
 			buildConfigurations = (
 				19B6EBA4217C153400C400C7 /* Debug */,
 				19B6EBA5217C153400C400C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19B6EBCC217D06C000C400C7 /* Build configuration list for PBXNativeTarget "Dispatchito iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19B6EBCD217D06C000C400C7 /* Debug */,
+				19B6EBCE217D06C000C400C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

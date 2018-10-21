@@ -6,7 +6,7 @@
 //  Copyright © 2018 Robot Pajamas. All rights reserved.
 //
 
-protocol Timeoutable {
+public protocol Timeoutable {
     var timeout: Int { get }// ms
     func timedOut()
 }
