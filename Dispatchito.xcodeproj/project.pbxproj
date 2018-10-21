@@ -14,6 +14,17 @@
 		19B6EB83217C153400C400C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19B6EB81217C153400C400C7 /* LaunchScreen.storyboard */; };
 		19B6EB8E217C153400C400C7 /* DispatchitoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B6EB8D217C153400C400C7 /* DispatchitoTests.swift */; };
 		19B6EB99217C153400C400C7 /* DispatchitoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B6EB98217C153400C400C7 /* DispatchitoUITests.swift */; };
+		19B6EBA9217C1B2A00C400C7 /* Cancellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B6EBA8217C1B2A00C400C7 /* Cancellable.swift */; };
+		19B6EBAB217C1B3D00C400C7 /* Completable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B6EBAA217C1B3D00C400C7 /* Completable.swift */; };
+		19B6EBAD217C1B6E00C400C7 /* Dispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B6EBAC217C1B6E00C400C7 /* Dispatch.swift */; };
+		19B6EBAF217C1B7800C400C7 /* Dispatchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B6EBAE217C1B7800C400C7 /* Dispatchable.swift */; };
+		19B6EBB1217C1B8D00C400C7 /* Dispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B6EBB0217C1B8D00C400C7 /* Dispatcher.swift */; };
+		19B6EBB3217C1B9C00C400C7 /* Executable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B6EBB2217C1B9C00C400C7 /* Executable.swift */; };
+		19B6EBB5217C1BCA00C400C7 /* Retriable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B6EBB4217C1BCA00C400C7 /* Retriable.swift */; };
+		19B6EBB7217C1BDA00C400C7 /* SerialDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B6EBB6217C1BDA00C400C7 /* SerialDispatcher.swift */; };
+		19B6EBB9217C1BEB00C400C7 /* Timeoutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B6EBB8217C1BEB00C400C7 /* Timeoutable.swift */; };
+		19B6EBBB217C1EDD00C400C7 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B6EBBA217C1EDD00C400C7 /* Result.swift */; };
+		19B6EBBD217C2D5700C400C7 /* Runnable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B6EBBC217C2D5700C400C7 /* Runnable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +58,17 @@
 		19B6EB94217C153400C400C7 /* DispatchitoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DispatchitoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		19B6EB98217C153400C400C7 /* DispatchitoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchitoUITests.swift; sourceTree = "<group>"; };
 		19B6EB9A217C153400C400C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19B6EBA8217C1B2A00C400C7 /* Cancellable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cancellable.swift; sourceTree = "<group>"; };
+		19B6EBAA217C1B3D00C400C7 /* Completable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Completable.swift; sourceTree = "<group>"; };
+		19B6EBAC217C1B6E00C400C7 /* Dispatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dispatch.swift; sourceTree = "<group>"; };
+		19B6EBAE217C1B7800C400C7 /* Dispatchable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dispatchable.swift; sourceTree = "<group>"; };
+		19B6EBB0217C1B8D00C400C7 /* Dispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dispatcher.swift; sourceTree = "<group>"; };
+		19B6EBB2217C1B9C00C400C7 /* Executable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Executable.swift; sourceTree = "<group>"; };
+		19B6EBB4217C1BCA00C400C7 /* Retriable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Retriable.swift; sourceTree = "<group>"; };
+		19B6EBB6217C1BDA00C400C7 /* SerialDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerialDispatcher.swift; sourceTree = "<group>"; };
+		19B6EBB8217C1BEB00C400C7 /* Timeoutable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timeoutable.swift; sourceTree = "<group>"; };
+		19B6EBBA217C1EDD00C400C7 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		19B6EBBC217C2D5700C400C7 /* Runnable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Runnable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +119,7 @@
 		19B6EB77217C153200C400C7 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				19B6EBA7217C1AEC00C400C7 /* New Group */,
 				19B6EB78217C153200C400C7 /* AppDelegate.swift */,
 				19B6EB7A217C153200C400C7 /* ViewController.swift */,
 				19B6EB7C217C153200C400C7 /* Main.storyboard */,
@@ -123,6 +146,24 @@
 				19B6EB9A217C153400C400C7 /* Info.plist */,
 			);
 			path = DispatchitoUITests;
+			sourceTree = "<group>";
+		};
+		19B6EBA7217C1AEC00C400C7 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				19B6EBA8217C1B2A00C400C7 /* Cancellable.swift */,
+				19B6EBAA217C1B3D00C400C7 /* Completable.swift */,
+				19B6EBAC217C1B6E00C400C7 /* Dispatch.swift */,
+				19B6EBAE217C1B7800C400C7 /* Dispatchable.swift */,
+				19B6EBB0217C1B8D00C400C7 /* Dispatcher.swift */,
+				19B6EBB2217C1B9C00C400C7 /* Executable.swift */,
+				19B6EBB4217C1BCA00C400C7 /* Retriable.swift */,
+				19B6EBB6217C1BDA00C400C7 /* SerialDispatcher.swift */,
+				19B6EBB8217C1BEB00C400C7 /* Timeoutable.swift */,
+				19B6EBBA217C1EDD00C400C7 /* Result.swift */,
+				19B6EBBC217C2D5700C400C7 /* Runnable.swift */,
+			);
+			name = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +297,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19B6EBAB217C1B3D00C400C7 /* Completable.swift in Sources */,
+				19B6EBBD217C2D5700C400C7 /* Runnable.swift in Sources */,
+				19B6EBA9217C1B2A00C400C7 /* Cancellable.swift in Sources */,
+				19B6EBB7217C1BDA00C400C7 /* SerialDispatcher.swift in Sources */,
+				19B6EBB5217C1BCA00C400C7 /* Retriable.swift in Sources */,
+				19B6EBAD217C1B6E00C400C7 /* Dispatch.swift in Sources */,
+				19B6EBAF217C1B7800C400C7 /* Dispatchable.swift in Sources */,
+				19B6EBBB217C1EDD00C400C7 /* Result.swift in Sources */,
+				19B6EBB1217C1B8D00C400C7 /* Dispatcher.swift in Sources */,
+				19B6EBB3217C1B9C00C400C7 /* Executable.swift in Sources */,
 				19B6EB7B217C153200C400C7 /* ViewController.swift in Sources */,
 				19B6EB79217C153200C400C7 /* AppDelegate.swift in Sources */,
+				19B6EBB9217C1BEB00C400C7 /* Timeoutable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
