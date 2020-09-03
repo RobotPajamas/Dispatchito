@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1967D5C9217D0C930099903A /* Dispatchito.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19B6EBC3217D06BF00C400C7 /* Dispatchito.framework */; };
-		1967D5CC217D11900099903A /* SynchronizedArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1967D5CB217D11900099903A /* SynchronizedArray.swift */; };
 		1967D5CF217D37C50099903A /* MockDispatchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1967D5CE217D37C50099903A /* MockDispatchable.swift */; };
 		19B6EB79217C153200C400C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B6EB78217C153200C400C7 /* AppDelegate.swift */; };
 		19B6EB7B217C153200C400C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B6EB7A217C153200C400C7 /* ViewController.swift */; };
@@ -19,18 +18,20 @@
 		19B6EB99217C153400C400C7 /* DispatchitoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B6EB98217C153400C400C7 /* DispatchitoUITests.swift */; };
 		19B6EBCA217D06C000C400C7 /* Dispatchito.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19B6EBC3217D06BF00C400C7 /* Dispatchito.framework */; };
 		19B6EBCB217D06C000C400C7 /* Dispatchito.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 19B6EBC3217D06BF00C400C7 /* Dispatchito.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		19B6EBE8217D08B300C400C7 /* SerialDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B6EBDB217D08B200C400C7 /* SerialDispatcher.swift */; };
-		19B6EBE9217D08B300C400C7 /* Cancellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B6EBDC217D08B200C400C7 /* Cancellable.swift */; };
-		19B6EBEB217D08B300C400C7 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B6EBDE217D08B200C400C7 /* Result.swift */; };
-		19B6EBEC217D08B300C400C7 /* Completable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B6EBDF217D08B200C400C7 /* Completable.swift */; };
-		19B6EBED217D08B300C400C7 /* Retriable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B6EBE0217D08B200C400C7 /* Retriable.swift */; };
-		19B6EBEE217D08B300C400C7 /* Runnable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B6EBE1217D08B200C400C7 /* Runnable.swift */; };
-		19B6EBEF217D08B300C400C7 /* Dispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B6EBE2217D08B200C400C7 /* Dispatch.swift */; };
-		19B6EBF0217D08B300C400C7 /* Dispatchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B6EBE3217D08B200C400C7 /* Dispatchable.swift */; };
-		19B6EBF1217D08B300C400C7 /* Dispatchito_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 19B6EBE4217D08B200C400C7 /* Dispatchito_iOS.h */; };
-		19B6EBF2217D08B300C400C7 /* Dispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B6EBE5217D08B300C400C7 /* Dispatcher.swift */; };
-		19B6EBF3217D08B300C400C7 /* Executable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B6EBE6217D08B300C400C7 /* Executable.swift */; };
-		19B6EBF4217D08B300C400C7 /* Timeoutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B6EBE7217D08B300C400C7 /* Timeoutable.swift */; };
+		33952BF9250093C300A7C55D /* Dispatchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33952BEA250093C300A7C55D /* Dispatchable.swift */; };
+		33952BFA250093C300A7C55D /* Dispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33952BEB250093C300A7C55D /* Dispatcher.swift */; };
+		33952BFB250093C300A7C55D /* Timeoutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33952BEC250093C300A7C55D /* Timeoutable.swift */; };
+		33952BFC250093C300A7C55D /* Retriable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33952BED250093C300A7C55D /* Retriable.swift */; };
+		33952BFD250093C300A7C55D /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33952BEE250093C300A7C55D /* Result.swift */; };
+		33952BFE250093C300A7C55D /* Executable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33952BF0250093C300A7C55D /* Executable.swift */; };
+		33952BFF250093C300A7C55D /* Completable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33952BF1250093C300A7C55D /* Completable.swift */; };
+		33952C00250093C300A7C55D /* SynchronizedArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33952BF2250093C300A7C55D /* SynchronizedArray.swift */; };
+		33952C01250093C300A7C55D /* Dispatchito_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 33952BF3250093C300A7C55D /* Dispatchito_iOS.h */; };
+		33952C02250093C300A7C55D /* Cancellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33952BF4250093C300A7C55D /* Cancellable.swift */; };
+		33952C03250093C300A7C55D /* Dispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33952BF5250093C300A7C55D /* Dispatch.swift */; };
+		33952C04250093C300A7C55D /* SerialDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33952BF6250093C300A7C55D /* SerialDispatcher.swift */; };
+		33952C05250093C300A7C55D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 33952BF7250093C300A7C55D /* Info.plist */; };
+		33952C06250093C300A7C55D /* Runnable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33952BF8250093C300A7C55D /* Runnable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,7 +80,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1967D5CB217D11900099903A /* SynchronizedArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SynchronizedArray.swift; sourceTree = "<group>"; };
 		1967D5CE217D37C50099903A /* MockDispatchable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDispatchable.swift; sourceTree = "<group>"; };
 		19B6EB75217C153200C400C7 /* Dispatchito Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dispatchito Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		19B6EB78217C153200C400C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "../Dispatchito Sample/AppDelegate.swift"; sourceTree = "<group>"; };
@@ -95,19 +95,20 @@
 		19B6EB98217C153400C400C7 /* DispatchitoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchitoUITests.swift; sourceTree = "<group>"; };
 		19B6EB9A217C153400C400C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		19B6EBC3217D06BF00C400C7 /* Dispatchito.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Dispatchito.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		19B6EBDB217D08B200C400C7 /* SerialDispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SerialDispatcher.swift; path = Sources/SerialDispatcher.swift; sourceTree = SOURCE_ROOT; };
-		19B6EBDC217D08B200C400C7 /* Cancellable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Cancellable.swift; path = Sources/Cancellable.swift; sourceTree = SOURCE_ROOT; };
-		19B6EBDD217D08B200C400C7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Sources/Info.plist; sourceTree = SOURCE_ROOT; };
-		19B6EBDE217D08B200C400C7 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Sources/Result.swift; sourceTree = SOURCE_ROOT; };
-		19B6EBDF217D08B200C400C7 /* Completable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Completable.swift; path = Sources/Internal/Completable.swift; sourceTree = SOURCE_ROOT; };
-		19B6EBE0217D08B200C400C7 /* Retriable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Retriable.swift; path = Sources/Retriable.swift; sourceTree = SOURCE_ROOT; };
-		19B6EBE1217D08B200C400C7 /* Runnable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Runnable.swift; path = Sources/Runnable.swift; sourceTree = SOURCE_ROOT; };
-		19B6EBE2217D08B200C400C7 /* Dispatch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Dispatch.swift; path = Sources/Dispatch.swift; sourceTree = SOURCE_ROOT; };
-		19B6EBE3217D08B200C400C7 /* Dispatchable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Dispatchable.swift; path = Sources/Dispatchable.swift; sourceTree = SOURCE_ROOT; };
-		19B6EBE4217D08B200C400C7 /* Dispatchito_iOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Dispatchito_iOS.h; path = Sources/Dispatchito_iOS.h; sourceTree = SOURCE_ROOT; };
-		19B6EBE5217D08B300C400C7 /* Dispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Dispatcher.swift; path = Sources/Dispatcher.swift; sourceTree = SOURCE_ROOT; };
-		19B6EBE6217D08B300C400C7 /* Executable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Executable.swift; path = Sources/Internal/Executable.swift; sourceTree = SOURCE_ROOT; };
-		19B6EBE7217D08B300C400C7 /* Timeoutable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Timeoutable.swift; path = Sources/Timeoutable.swift; sourceTree = SOURCE_ROOT; };
+		33952BEA250093C300A7C55D /* Dispatchable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dispatchable.swift; sourceTree = "<group>"; };
+		33952BEB250093C300A7C55D /* Dispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dispatcher.swift; sourceTree = "<group>"; };
+		33952BEC250093C300A7C55D /* Timeoutable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timeoutable.swift; sourceTree = "<group>"; };
+		33952BED250093C300A7C55D /* Retriable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Retriable.swift; sourceTree = "<group>"; };
+		33952BEE250093C300A7C55D /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		33952BF0250093C300A7C55D /* Executable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Executable.swift; sourceTree = "<group>"; };
+		33952BF1250093C300A7C55D /* Completable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Completable.swift; sourceTree = "<group>"; };
+		33952BF2250093C300A7C55D /* SynchronizedArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SynchronizedArray.swift; sourceTree = "<group>"; };
+		33952BF3250093C300A7C55D /* Dispatchito_iOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dispatchito_iOS.h; sourceTree = "<group>"; };
+		33952BF4250093C300A7C55D /* Cancellable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cancellable.swift; sourceTree = "<group>"; };
+		33952BF5250093C300A7C55D /* Dispatch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dispatch.swift; sourceTree = "<group>"; };
+		33952BF6250093C300A7C55D /* SerialDispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SerialDispatcher.swift; sourceTree = "<group>"; };
+		33952BF7250093C300A7C55D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33952BF8250093C300A7C55D /* Runnable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Runnable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,16 +150,6 @@
 			children = (
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		1967D5CD217D1A8B0099903A /* Internal */ = {
-			isa = PBXGroup;
-			children = (
-				1967D5CB217D11900099903A /* SynchronizedArray.swift */,
-				19B6EBDF217D08B200C400C7 /* Completable.swift */,
-				19B6EBE6217D08B300C400C7 /* Executable.swift */,
-			);
-			path = Internal;
 			sourceTree = "<group>";
 		};
 		19B6EB6C217C153100C400C7 = {
@@ -220,20 +211,38 @@
 		19B6EBC4217D06BF00C400C7 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				1967D5CD217D1A8B0099903A /* Internal */,
-				19B6EBDC217D08B200C400C7 /* Cancellable.swift */,
-				19B6EBE2217D08B200C400C7 /* Dispatch.swift */,
-				19B6EBE3217D08B200C400C7 /* Dispatchable.swift */,
-				19B6EBE5217D08B300C400C7 /* Dispatcher.swift */,
-				19B6EBE4217D08B200C400C7 /* Dispatchito_iOS.h */,
-				19B6EBDD217D08B200C400C7 /* Info.plist */,
-				19B6EBDE217D08B200C400C7 /* Result.swift */,
-				19B6EBE0217D08B200C400C7 /* Retriable.swift */,
-				19B6EBE1217D08B200C400C7 /* Runnable.swift */,
-				19B6EBDB217D08B200C400C7 /* SerialDispatcher.swift */,
-				19B6EBE7217D08B300C400C7 /* Timeoutable.swift */,
+				33952BE9250093C300A7C55D /* Dispatchito */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		33952BE9250093C300A7C55D /* Dispatchito */ = {
+			isa = PBXGroup;
+			children = (
+				33952BEA250093C300A7C55D /* Dispatchable.swift */,
+				33952BEB250093C300A7C55D /* Dispatcher.swift */,
+				33952BEC250093C300A7C55D /* Timeoutable.swift */,
+				33952BED250093C300A7C55D /* Retriable.swift */,
+				33952BEE250093C300A7C55D /* Result.swift */,
+				33952BEF250093C300A7C55D /* Internal */,
+				33952BF3250093C300A7C55D /* Dispatchito_iOS.h */,
+				33952BF4250093C300A7C55D /* Cancellable.swift */,
+				33952BF5250093C300A7C55D /* Dispatch.swift */,
+				33952BF6250093C300A7C55D /* SerialDispatcher.swift */,
+				33952BF7250093C300A7C55D /* Info.plist */,
+				33952BF8250093C300A7C55D /* Runnable.swift */,
+			);
+			path = Dispatchito;
+			sourceTree = "<group>";
+		};
+		33952BEF250093C300A7C55D /* Internal */ = {
+			isa = PBXGroup;
+			children = (
+				33952BF0250093C300A7C55D /* Executable.swift */,
+				33952BF1250093C300A7C55D /* Completable.swift */,
+				33952BF2250093C300A7C55D /* SynchronizedArray.swift */,
+			);
+			path = Internal;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,7 +252,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19B6EBF1217D08B300C400C7 /* Dispatchito_iOS.h in Headers */,
+				33952C01250093C300A7C55D /* Dispatchito_iOS.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,6 +409,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33952C05250093C300A7C55D /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,18 +446,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19B6EBEC217D08B300C400C7 /* Completable.swift in Sources */,
-				19B6EBF0217D08B300C400C7 /* Dispatchable.swift in Sources */,
-				19B6EBF2217D08B300C400C7 /* Dispatcher.swift in Sources */,
-				19B6EBEB217D08B300C400C7 /* Result.swift in Sources */,
-				19B6EBED217D08B300C400C7 /* Retriable.swift in Sources */,
-				19B6EBE9217D08B300C400C7 /* Cancellable.swift in Sources */,
-				19B6EBEE217D08B300C400C7 /* Runnable.swift in Sources */,
-				19B6EBE8217D08B300C400C7 /* SerialDispatcher.swift in Sources */,
-				19B6EBEF217D08B300C400C7 /* Dispatch.swift in Sources */,
-				19B6EBF3217D08B300C400C7 /* Executable.swift in Sources */,
-				1967D5CC217D11900099903A /* SynchronizedArray.swift in Sources */,
-				19B6EBF4217D08B300C400C7 /* Timeoutable.swift in Sources */,
+				33952C02250093C300A7C55D /* Cancellable.swift in Sources */,
+				33952BFF250093C300A7C55D /* Completable.swift in Sources */,
+				33952BFB250093C300A7C55D /* Timeoutable.swift in Sources */,
+				33952BFC250093C300A7C55D /* Retriable.swift in Sources */,
+				33952C03250093C300A7C55D /* Dispatch.swift in Sources */,
+				33952BFA250093C300A7C55D /* Dispatcher.swift in Sources */,
+				33952BF9250093C300A7C55D /* Dispatchable.swift in Sources */,
+				33952C00250093C300A7C55D /* SynchronizedArray.swift in Sources */,
+				33952BFE250093C300A7C55D /* Executable.swift in Sources */,
+				33952C06250093C300A7C55D /* Runnable.swift in Sources */,
+				33952C04250093C300A7C55D /* SerialDispatcher.swift in Sources */,
+				33952BFD250093C300A7C55D /* Result.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -743,9 +753,9 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Dispatchito/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -775,9 +785,9 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Dispatchito/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
