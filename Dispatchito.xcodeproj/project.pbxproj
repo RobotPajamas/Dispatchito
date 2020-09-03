@@ -30,7 +30,6 @@
 		33952C02250093C300A7C55D /* Cancellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33952BF4250093C300A7C55D /* Cancellable.swift */; };
 		33952C03250093C300A7C55D /* Dispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33952BF5250093C300A7C55D /* Dispatch.swift */; };
 		33952C04250093C300A7C55D /* SerialDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33952BF6250093C300A7C55D /* SerialDispatcher.swift */; };
-		33952C05250093C300A7C55D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 33952BF7250093C300A7C55D /* Info.plist */; };
 		33952C06250093C300A7C55D /* Runnable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33952BF8250093C300A7C55D /* Runnable.swift */; };
 /* End PBXBuildFile section */
 
@@ -340,7 +339,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1000;
-				LastUpgradeCheck = 1000;
+				LastUpgradeCheck = 1170;
 				ORGANIZATIONNAME = "Robot Pajamas";
 				TargetAttributes = {
 					19B6EB74217C153200C400C7 = {
@@ -409,7 +408,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33952C05250093C300A7C55D /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
