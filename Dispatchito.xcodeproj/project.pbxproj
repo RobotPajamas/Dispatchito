@@ -346,7 +346,7 @@
 					};
 					19B6EBC2217D06BF00C400C7 = {
 						CreatedOnToolsVersion = 10.0;
-						LastSwiftMigration = 1000;
+						LastSwiftMigration = 1170;
 					};
 				};
 			};
@@ -755,7 +755,7 @@
 				PRODUCT_NAME = Dispatchito;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -786,7 +786,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.robotpajamas.Dispatchito-iOS";
 				PRODUCT_NAME = Dispatchito;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
