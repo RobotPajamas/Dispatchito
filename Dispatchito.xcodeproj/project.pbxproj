@@ -759,6 +759,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.robotpajamas.Dispatchito-iOS";
 				PRODUCT_NAME = Dispatchito;
 				SKIP_INSTALL = YES;
@@ -791,6 +792,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.robotpajamas.Dispatchito-iOS";
 				PRODUCT_NAME = Dispatchito;
 				SKIP_INSTALL = YES;
